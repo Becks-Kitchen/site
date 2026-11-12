@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beck's Kitchen · Batch cooking à domicile Yvelines et Val d'Oise</title>
+<meta name="description" content="Nos cuisinières préparent vos repas de la semaine chez vous. Batch cooking à domicile dans les Yvelines (78) et le Val d'Oise (95). Crédit d'impôt de 50 %.">
+<meta name="theme-color" content="#fbf2e1">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preload" href="fonts/barlow-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGO SERVICES À LA PERSONNE (obligatoire, ne jamais retirer) -->
+<a href="https://www.servicesalapersonne.gouv.fr" target="_blank" rel="noopener noreferrer"
+   class="sap-fixed" title="Beck's Kitchen — organismes déclarés Services à la personne">
+  <img src="sap-traceur.png" alt="Services à la personne — organisme déclaré">
+</a>
+
+<!-- EN-TÊTE ET MENU -->
+<header class="entete">
+  <div class="entete-inner">
+    <a href="#haut" class="entete-logo" aria-label="Beck's Kitchen, retour en haut de la page">
+      <img src="images/logos/logo-beckskitchen-1ligne-rouge.png" alt="Beck's Kitchen">
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu" id="menu-bouton">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      Menu
+    </button>
+    <nav aria-label="Menu principal">
+      <ul class="menu" id="menu">
+        <li><a href="#concept">Le concept</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#rendez-vous">Rendez-vous</a></li>
+        <li><a href="#devenir-cuisiniere">Devenir cuisinier·e</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="haut">
+
+<!-- 1. HÉRO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div>
+      <img class="hero-logo" src="images/logos/logo-beckskitchen-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
+      <h1>Vos repas de la semaine, cuisinés chez vous.</h1>
+      <p class="hero-sous-titre">Batch cooking à domicile · Yvelines (78) et Val d'Oise (95)</p>
+      <div class="boutons">
+        <a href="#tarifs" class="btn btn-plein" data-ouvrir-simulateur>Estimer mon tarif</a>
+        <a href="#rendez-vous" class="btn btn-contour">Prendre rendez-vous</a>
+      </div>
+    </div>
+    <!-- PHOTO PROVISOIRE : remplacer images/hero.jpg par une photo de session (mains et légumes, sans visage) -->
+    <div class="hero-photo provisoire">
+      <img src="images/hero.jpg" alt="Mains d'une cuisinière qui coupe des carottes sur une planche en bois, pendant une session de batch cooking à domicile">
+    </div>
+  </div>
+</section>
+
+<!-- 2. COMMENT ÇA FONCTIONNE -->
+<section class="section" id="concept">
+  <div class="section-inner">
+    <span class="tampon">Le concept</span>
+    <h2 class="titre">Comment ça fonctionne ?</h2>
+    <p class="accroche">Pas de livraison, pas de barquettes. Votre cuisinière vient chez vous, cuisine, et repart.</p>
+    <div class="grille grille-3">
+      <article class="ticket">
+        <div class="ticket-num"><span>Étape</span><span class="grand">01</span></div>
+        <h3>On se parle</h3>
+        <p>Un appel de 30 minutes pour comprendre vos goûts, votre quotidien et vos contraintes. Nous vous présentons ensuite votre cuisinière.</p>
+      </article>
+      <article class="ticket">
+        <div class="ticket-num"><span>Étape</span><span class="grand">02</span></div>
+        <h3>On cuisine chez vous</h3>
+        <p>Votre cuisinière fait les courses si vous le souhaitez, cuisine les repas de la semaine et repart en laissant la cuisine propre.</p>
+        <span class="note">Courses en option : + 50 € par prestation.</span>
+      </article>
+      <article class="ticket">
+        <div class="ticket-num"><span>Étape</span><span class="grand">03</span></div>
+        <h3>Vous passez à table</h3>
+        <p>Vous réchauffez ou composez vos repas en quelques minutes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CE QUE ÇA CHANGE -->
+<section class="section section-alt" id="benefices">
+  <div class="section-inner">
+    <span class="tampon">Ce que ça change</span>
+    <h2 class="titre">Pour vous, concrètement</h2>
+    <div class="grille grille-4" style="margin-top:36px;">
+      <div class="benefice">
+        <img class="benefice-ico" src="images/illustrations/citron.png" alt="">
+        <h3>Du temps retrouvé</h3>
+        <p>Deux à trois heures récupérées chaque semaine, et plus jamais « qu'est-ce qu'on mange ce soir ? »</p>
+      </div>
+      <div class="benefice">
+        <img class="benefice-ico" src="images/illustrations/poireau.png" alt="">
+        <h3>Une vraie cuisine maison</h3>
+        <p>Des produits frais, des recettes équilibrées, adaptées aux goûts et aux allergies de chacun.</p>
+      </div>
+      <div class="benefice">
+        <img class="benefice-ico" src="images/illustrations/oeuf.png" alt="">
+        <h3>Toute la famille</h3>
+        <p>Des petits pots de bébé aux lunchbox des adultes, chacun trouve son compte.</p>
+      </div>
+      <div class="benefice">
+        <img class="benefice-ico" src="images/illustrations/tomate.png" alt="">
+        <h3>50 % de crédit d'impôt</h3>
+        <p>Service à la personne déclaré : la moitié du coût de la prestation, hors ingrédients, vous revient en crédit d'impôt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. LES PLATS DU MOMENT -->
+<section class="section" id="plats">
+  <div class="section-inner">
+    <span class="tampon">Saison automne</span>
+    <h2 class="titre" style="margin-bottom:36px;">Ce qui mijote en ce moment</h2>
+    <!-- PHOTOS PROVISOIRES (site La Becquée) : remplacer les fichiers dans images/plats/ en gardant les mêmes noms -->
+    <div class="carrousel">
+      <div class="carrousel-fenetre">
+        <div class="carrousel-piste" id="carrousel-piste">
+          <div class="plat"><img class="plat-photo" src="images/plats/tarte-potimarron.jpg" alt="Tarte au potimarron, coupée en parts" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Tarte au potimarron</div></div></div>
+          <div class="plat"><img class="plat-photo" src="images/plats/assiette-palette.jpg" alt="Assiette de palette mijotée et ses légumes" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Palette mijotée</div></div></div>
+          <div class="plat"><img class="plat-photo" src="images/plats/carottes-rotis.jpg" alt="Carottes rôties au four" loading="lazy"><div class="plat-info"><div class="plat-cat">Accompagnement</div><div class="plat-nom">Carottes rôties</div></div></div>
+          <div class="plat"><img class="plat-photo" src="images/plats/polpette.jpg" alt="Polpette, boulettes de viande en sauce tomate" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Polpette</div></div></div>
+          <div class="plat"><img class="plat-photo" src="images/plats/granola.jpg" alt="Granola maison en bocal" loading="lazy"><div class="plat-info"><div class="plat-cat">Petit-déjeuner</div><div class="plat-nom">Granola</div></div></div>
+          <div class="plat"><img class="plat-photo" src="images/plats/cookies-choco.jpg" alt="Cookies aux pépites de chocolat" loading="lazy"><div class="plat-info"><div class="plat-cat">Goûter</div><div class="plat-nom">Cookies au chocolat</div></div></div>
+        </div>
+      </div>
+      <button class="carrousel-fleche prec" id="carr-prec" type="button" aria-label="Plat précédent">&#8249;</button>
+      <button class="carrousel-fleche suiv" id="carr-suiv" type="button" aria-label="Plat suivant">&#8250;</button>
+    </div>
+    <div class="carrousel-points" id="carrousel-points"></div>
+  </div>
+</section>
+
+<!-- 5. TARIFS ET SIMULATEUR -->
+<section class="section section-alt" id="tarifs">
+  <div class="sim-inner">
+    <span class="tampon">Tarifs</span>
+    <h2 class="titre">Un tarif clair, calculé pour votre foyer</h2>
+    <p class="accroche">Estimez votre prestation en quelques secondes, crédit d'impôt compris.</p>
+    <button class="btn btn-plein" type="button" id="btn-estimer" aria-expanded="false" aria-controls="sim-wrap" onclick="toggleSim(this)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+      Estimer mon tarif
+    </button>
+    <div class="sim-wrap ticket" id="sim-wrap">
+      <div id="sim-widget">
+        <div class="sw-sec"><div class="sw-title">Votre foyer</div>
+          <div class="sw-row"><label>Adultes</label><div class="sw-sv"><button class="sw-btn" type="button" aria-label="Un adulte de moins" onclick="simStep('adultes',-1)">−</button><span class="sw-val" id="sim-val-adultes" aria-live="polite">2</span><button class="sw-btn" type="button" aria-label="Un adulte de plus" onclick="simStep('adultes',1)">+</button></div></div>
+          <div class="sw-row"><label>Enfants</label><div class="sw-sv"><button class="sw-btn" type="button" aria-label="Un enfant de moins" onclick="simStep('enfants',-1)">−</button><span class="sw-val" id="sim-val-enfants" aria-live="polite">0</span><button class="sw-btn" type="button" aria-label="Un enfant de plus" onclick="simStep('enfants',1)">+</button></div></div>
+          <div class="sw-row"><label>Bébés</label><div class="sw-sv"><button class="sw-btn" type="button" aria-label="Un bébé de moins" onclick="simStep('bebes',-1)">−</button><span class="sw-val" id="sim-val-bebes" aria-live="polite">0</span><button class="sw-btn" type="button" aria-label="Un bébé de plus" onclick="simStep('bebes',1)">+</button></div></div>
+        </div>
+        <div class="sw-sec"><div class="sw-title">Repas à préparer</div>
+          <div class="sw-row"><label>Nombre de repas</label><div class="sw-sv"><button class="sw-btn" type="button" aria-label="Un repas de moins" onclick="simStep('repas',-1)">−</button><span class="sw-val" id="sim-val-repas" aria-live="polite">5</span><button class="sw-btn" type="button" aria-label="Un repas de plus" onclick="simStep('repas',1)">+</button></div></div>
+        </div>
+        <div class="sw-sec"><div class="sw-title">Options</div>
+          <div class="sw-checks">
+            <label class="sw-check"><input type="checkbox" id="sim-opt-petitdej" onchange="calcul()"><span class="sw-ci"><svg width="14" height="11" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sw-ct"><strong>Petit-déjeuner et goûters</strong><span id="sim-lbl-pdj-prix">20–50 €</span></span></label>
+            <label class="sw-check" id="sim-opt-bebe-wrap" style="display:none"><input type="checkbox" id="sim-opt-bebe" onchange="calcul()"><span class="sw-ci"><svg width="14" height="11" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sw-ct"><strong>Petits pots bébé</strong><span>+50 €</span></span></label>
+            <label class="sw-check"><input type="checkbox" id="sim-opt-courses" onchange="calcul()"><span class="sw-ci"><svg width="14" height="11" viewBox="0 0 12 9" fill="none"><path d="M1 4L4.5 7.5L11 1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sw-ct"><strong>Courses</strong><span>+50 €</span></span></label>
+          </div>
+        </div>
+        <div class="sw-sec">
+          <label class="sw-toggle"><span class="sw-ti"><strong>Première prestation</strong><span>−10 € offerts</span></span><span style="position:relative;flex-shrink:0;"><input type="checkbox" id="sim-toggle-premiere" onchange="calcul()" style="opacity:0;width:0;height:0;position:absolute;"><span class="sw-track"></span></span></label>
+        </div>
+        <div class="sw-result">
+          <div class="sw-rh">Estimation de votre prestation</div>
+          <div class="sw-rl">
+            <div class="sw-rline" id="sim-line-repas" style="display:none">Préparation des repas<span id="sim-val-repas-price"></span></div>
+            <div class="sw-rline" id="sim-line-petitdej" style="display:none"><span id="sim-lbl-pdj"></span><span id="sim-val-pdj-price"></span></div>
+            <div class="sw-rline" id="sim-line-bebe" style="display:none">Petits pots bébé<span>+50,00 €</span></div>
+            <div class="sw-rline" id="sim-line-courses" style="display:none">Courses<span>+50,00 €</span></div>
+            <div class="sw-rdiv"></div>
+            <div class="sw-rline tot">Total<span id="sim-val-brut">—</span></div>
+            <div class="sw-rline" id="sim-line-premiere" style="display:none">Offre première prestation<span>−10,00 €</span></div>
+            <div class="sw-rline ci">Crédit d'impôt (50 %)<span id="sim-val-ci">—</span></div>
+          </div>
+          <div class="sw-rnet"><div class="sw-rnl">Ce qui vous reste à payer<small>par prestation</small></div><div class="sw-rna" id="sim-val-net">—</div></div>
+          <div id="sim-parportion" class="sw-pp" style="display:none">Coût par portion<strong id="sim-val-parportion"></strong></div>
+          <div id="sim-note" class="sw-note"></div>
+          <p class="sw-note">Tarif indicatif, basé sur nos prix conseillés. Votre cuisinière vous le confirme par un devis gratuit après l'appel découverte.</p>
+        </div>
+      </div>
+    </div>
+    <p class="sim-mention">Le crédit d'impôt de 50 % s'applique dans la limite de 12 000 € de dépenses par an, majorée de 1 500 € par enfant à charge.</p>
+  </div>
+</section>
+
+<!-- 6. NOS CUISINIÈRES (pas de portrait dans cette version) -->
+<section class="section" id="cuisinieres">
+  <div class="section-inner cuisinieres">
+    <div class="cuisinieres-texte">
+      <span class="tampon">Nos cuisinières</span>
+      <h2 class="titre">Les cuisinières Beck's Kitchen</h2>
+      <p class="accroche" style="margin-bottom:18px;">Des cuisinières proches de chez vous, formées à la même méthode, qui cuisinent comme pour leur propre famille.</p>
+      <p>Chaque cuisinière est indépendante et intervient dans son secteur. Toutes suivent la méthode Beck's Kitchen et cuisinent à partir du même carnet de recettes, testées et vérifiées.</p>
+    </div>
+    <!-- PHOTOS PROVISOIRES (site La Becquée) : plats et sessions, sans visage -->
+    <div class="cuisinieres-photos">
+      <img src="images/plats/soupe-pistou.jpg" alt="Soupe au pistou servie en bol" loading="lazy">
+      <img src="images/plats/frittata.jpg" alt="Frittata aux légumes" loading="lazy">
+      <img src="images/plats/poulet-citron.jpg" alt="Poulet au citron" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 7. QUESTIONS FRÉQUENTES -->
+<section class="section section-alt" id="questions">
+  <div class="section-inner">
+    <div class="centre">
+      <span class="tampon">Questions</span>
+      <h2 class="titre" style="margin-bottom:36px;">Questions fréquentes</h2>
+    </div>
+    <div class="questions">
+      <details class="question"><summary>Comment fonctionne le crédit d'impôt ?</summary><p>Nos cuisinières sont des organismes de services à la personne déclarés. 50 % du coût de la prestation vous est rendu en crédit d'impôt, dans la limite de 12 000 € de dépenses par an, majorée de 1 500 € par enfant à charge (15 000 € au plus). Vous recevez une attestation fiscale chaque année.</p></details>
+      <details class="question"><summary>Qui achète les ingrédients ?</summary><p>Vous faites les courses vous-même avec la liste que nous vous envoyons, ou votre cuisinière s'en charge pour 50 € par prestation, hors prix des ingrédients.</p></details>
+      <details class="question"><summary>Vous adaptez-vous aux allergies et aux régimes ?</summary><p>Oui. Tout est noté lors de l'appel découverte, pour chaque membre du foyer : allergies, régimes, goûts et dégoûts. Les menus sont construits à partir de là.</p></details>
+      <details class="question"><summary>De quoi avez-vous besoin dans ma cuisine ?</summary><p>Une cuisine équipée classique : plaques, four, quelques casseroles. Pour la première session, nous apportons des boîtes de conservation si besoin. Pour les suivantes, il vous suffira d'en avoir assez chez vous.</p></details>
+      <details class="question"><summary>Combien de temps se conservent les plats ?</summary><p>De 2 à 4 jours au réfrigérateur selon les plats. Après chaque prestation, vous recevez les instructions de conservation.</p></details>
+      <details class="question"><summary>Dois-je être présent pendant la session ?</summary><p>Pour la première session, c'est préférable : nous faisons connaissance avec vous et avec votre cuisine. Ensuite, vous pouvez nous confier vos clés et nous travaillons en toute autonomie.</p></details>
+      <details class="question"><summary>Puis-je annuler ou décaler une session ?</summary><p>Oui : vous pouvez décaler une session jusqu'à 48 heures avant, et l'annuler jusqu'à une semaine avant.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. RENDEZ-VOUS -->
+<section class="section" id="rendez-vous">
+  <div class="section-inner">
+    <div class="centre">
+      <span class="tampon">Rendez-vous</span>
+      <h2 class="titre">On fait connaissance ?</h2>
+      <p class="accroche">Un premier échange de 30 minutes, en visio ou par téléphone, gratuit et sans engagement. Choisissez votre département pour réserver un créneau.</p>
+    </div>
+    <div class="rdv-boutons">
+      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn btn-plein">Prendre rendez-vous · Yvelines (78)</a>
+      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn btn-plein">Prendre rendez-vous · Val d'Oise (95)</a>
+    </div>
+    <p class="rdv-ecrire">Vous hésitez ou préférez écrire ? Laissez-nous un message, nous vous recontactons.</p>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="info-card"><strong>E-mail</strong><a href="mailto:contact@becks-kitchen.fr">contact@becks-kitchen.fr</a></div>
+        <div class="info-card"><strong>Délai de réponse</strong>Réponse sous 24 h</div>
+        <div class="info-card"><strong>Appel découverte</strong>Gratuit, 30 min</div>
+        <div class="info-card"><strong>Zone</strong>Yvelines et Val d'Oise</div>
+      </div>
+      <div class="form-wrap">
+        <div id="form-container">
+          <h3 class="form-title">Dites-nous en quelques mots…</h3>
+          <p class="form-sub">Nous lirons votre message avant notre échange pour que nos 30 minutes soient vraiment utiles.</p>
+          <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+            <div class="form-grid">
+              <div class="form-group"><label for="f-prenom">Prénom <span class="req">*</span></label><input id="f-prenom" type="text" name="prenom" placeholder="Marie" autocomplete="given-name" required></div>
+              <div class="form-group"><label for="f-nom">Nom <span class="req">*</span></label><input id="f-nom" type="text" name="nom" placeholder="Dupont" autocomplete="family-name" required></div>
+              <div class="form-group form-full"><label for="f-email">E-mail <span class="req">*</span></label><input id="f-email" type="email" name="email" placeholder="marie@exemple.fr" autocomplete="email" required></div>
+              <div class="form-group"><label for="f-commune">Commune</label><input id="f-commune" type="text" name="commune" placeholder="Mantes-la-Jolie" autocomplete="address-level2"></div>
+              <div class="form-group"><label for="f-foyer">Taille du foyer</label><select id="f-foyer" name="foyer"><option value="">— Choisir —</option><option>1 personne</option><option>2 personnes</option><option>Famille (3–4 pers.)</option><option>Grande famille (5+)</option></select></div>
+              <div class="form-group form-full"><label for="f-contraintes">Contraintes alimentaires</label><input id="f-contraintes" type="text" name="contraintes" placeholder="Végétarien, sans gluten…"></div>
+              <div class="form-group form-full"><label for="f-source">Comment vous nous avez connus ?</label><select id="f-source" name="source"><option value="">— Choisir —</option><option>Google</option><option>Instagram</option><option>Facebook</option><option>Bouche à oreille</option><option>Autre</option></select></div>
+              <div class="form-group form-full"><label for="f-message">Votre message <span class="req">*</span></label><textarea id="f-message" name="message" placeholder="Dites-nous ce qui vous a donné envie de nous contacter…" required></textarea></div>
+              <div class="form-group form-full" role="radiogroup" aria-labelledby="f-format"><span class="etiquette" id="f-format">Format d'échange préféré</span>
+                <div class="rdv-options">
+                  <label class="rdv-opt"><input type="radio" name="format" value="visio"><span class="rdv-dot"></span><span>Visio</span></label>
+                  <label class="rdv-opt"><input type="radio" name="format" value="telephone"><span class="rdv-dot"></span><span>Téléphone</span></label>
+                  <label class="rdv-opt"><input type="radio" name="format" value="domicile"><span class="rdv-dot"></span><span>À domicile</span></label>
+                  <label class="rdv-opt"><input type="radio" name="format" value="indifferent" checked><span class="rdv-dot"></span><span>Indifférent</span></label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-plein form-submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Envoyer ma demande
+            </button>
+          </form>
+        </div>
+        <div class="form-success" id="form-success" role="status">
+          <img src="images/illustrations/feuille.png" alt="">
+          <h3>Message envoyé !</h3>
+          <p>Merci de votre confiance. Nous revenons vers vous sous 24 h.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. DEVENIR CUISINIER·E BECK'S KITCHEN -->
+<section class="section rejoindre" id="devenir-cuisiniere">
+  <div class="section-inner">
+    <span class="tampon">Rejoindre le réseau</span>
+    <h2 class="titre">Et si vous deveniez cuisinier·e Beck's Kitchen ?</h2>
+    <p class="accroche">Vous aimez cuisiner et cherchez une activité flexible, qui a du sens ? Lancez votre activité à votre compte, sans vous lancer seul·e.</p>
+    <div class="encadre-chef"><strong>Pas besoin d'être chef·fe</strong>Aucun diplôme de cuisine exigé. Nous vous transmettons une méthode, des recettes et un outil pour cuisiner en confiance chez vos clients.</div>
+
+    <h3 class="sous-titre-blanc">Ce que vous apporte le réseau</h3>
+    <div class="grille grille-3">
+      <article class="ticket"><h3>Une marque et des clients</h3><p>Le nom Beck's Kitchen, son site et les demandes de clients de votre secteur.</p></article>
+      <article class="ticket"><h3>Une méthode éprouvée</h3><p>Chaque étape d'une session, du premier appel au message de fin, déjà pensée pour vous.</p></article>
+      <article class="ticket"><h3>Un accompagnement</h3><p>Pour démarrer : statut, déclaration services à la personne, crédit d'impôt, premières sessions.</p></article>
+    </div>
+
+    <div class="outil-bloc">
+      <h3 class="sous-titre-blanc">L'outil Beck's Kitchen</h3>
+      <p class="outil-accroche">Un seul outil, sur téléphone ou tablette, qui vous suit du menu à la facture.</p>
+      <ul class="outil-liste">
+        <li><span class="fait">Un carnet commun de plus de 100 recettes testées, allergènes vérifiés, quantités ajustées au nombre de portions</span><span class="gain">Pas besoin d'inventer vos menus</span></li>
+        <li><span class="fait">Les allergies de chaque membre du foyer signalées sur chaque recette</span><span class="gain">Vous cuisinez l'esprit tranquille</span></li>
+        <li><span class="fait">« La carte » : un menu de saison mis en page, prêt à envoyer au client</span><span class="gain">Vos clients choisissent, vous validez</span></li>
+        <li><span class="fait">Une liste de courses regroupée, en pièces et en grammes</span><span class="gain">Des courses rapides, sans oubli</span></li>
+        <li><span class="fait">Un plan de session : les découpes, puis les recettes de la plus longue à la plus courte, à cocher au fil de la session</span><span class="gain">Vous savez quoi faire en arrivant</span></li>
+        <li><span class="fait">Le message de fin (conservation, congélation), prêt à copier dans WhatsApp</span><span class="gain">Vos clients sont bien informés en une minute</span></li>
+        <li><span class="fait">Le tarif calculé crédit d'impôt compris, et le suivi des devis et des paiements</span><span class="gain">L'administratif sans tableur</span></li>
+      </ul>
+    </div>
+
+    <div class="boutons">
+      <a href="mailto:contact@becks-kitchen.fr?subject=Devenir%20cuisinier%C2%B7e%20Beck's%20Kitchen" class="btn btn-plein">Je veux en savoir plus</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. DERNIER APPEL -->
+<section class="dernier-appel raye" id="dernier-appel">
+  <div class="boite">
+    <h2 class="titre">Une semaine qui vous ressemble ?</h2>
+    <p>Un premier échange gratuit de 30 minutes, sans engagement.</p>
+    <div class="boutons">
+      <a href="#tarifs" class="btn btn-plein" data-ouvrir-simulateur>Estimer mon tarif</a>
+      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn btn-contour">Rendez-vous Yvelines</a>
+      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn btn-contour">Rendez-vous Val d'Oise</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- PIED DE PAGE -->
+<footer class="pied">
+  <div class="pied-inner">
+    <img class="pied-logo" src="images/logos/logo-bk-creme.png" alt="BK, monogramme Beck's Kitchen">
+    <p class="pied-accroche">Batch cooking à domicile dans les Yvelines et le Val d'Oise</p>
+    <!-- LIENS PROVISOIRES : Instagram et Facebook, à remplacer au lancement -->
+    <p class="pied-liens">
+      <a href="#" data-provisoire>Instagram</a>
+      <a href="#" data-provisoire>Facebook</a>
+      <a href="mailto:contact@becks-kitchen.fr">contact@becks-kitchen.fr</a>
+    </p>
+    <p class="pied-mentions">Service à la personne · Crédit d'impôt de 50 % · <a href="mentions-legales.html">Mentions légales</a></p>
+    <p class="pied-communes"><strong>Communes desservies</strong>Andrésy · Arronville · Aubergenville · Auvers-sur-Oise · Beaumont-sur-Oise · Boisemont · Bonnières-sur-Seine · Butry-sur-Oise · Cergy · Champagne-sur-Oise · Chanteloup-les-Vignes · Chapet · Conflans-Sainte-Honorine · Courdimanche · Ennery · Épône · Flins-sur-Seine · Frouville · Gargenville · Hardricourt · Hédouville · Juziers · L'Isle-Adam · Labbeville · Les Mureaux · Limay · Livilliers · Mantes-la-Jolie · Mantes-la-Ville · Menucourt · Mériel · Méry-sur-Oise · Meulan-en-Yvelines · Mézy-sur-Seine · Nesle-la-Vallée · Osny · Parmain · Poissy · Pontoise · Ronquerolles · Rosny-sur-Seine · Saint-Germain-en-Laye · Triel-sur-Seine · Vallangoujard · Valmondois · Vauréal · Vaux-sur-Seine · Verneuil-sur-Seine · Vernouillet</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="simulateur.js"></script>
+</body>
+</html>
