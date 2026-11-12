@@ -17,33 +17,41 @@
   <img src="sap-traceur.png" alt="Services à la personne — organisme déclaré">
 </a>
 
-<!-- EN-TÊTE ET MENU -->
-<header class="entete">
-  <div class="entete-inner">
-    <a href="index.html" class="entete-logo" aria-label="Beck's Kitchen, page d'accueil">
-      <img src="images/logos/logo-beckskitchen-1ligne-rouge.png" alt="Beck's Kitchen">
-    </a>
-    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu" id="menu-bouton">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      Menu
-    </button>
-    <nav aria-label="Menu principal">
-      <ul class="menu" id="menu">
-        <li><a href="index.html#concept">Le concept</a></li>
-        <li><a href="index.html#tarifs">Tarifs</a></li>
-        <li><a href="index.html#questions">Questions</a></li>
-        <li><a href="index.html#rendez-vous">Rendez-vous</a></li>
-        <li><a href="index.html#devenir-cuisiniere">Devenir cuisinier·e</a></li>
-      </ul>
-    </nav>
-  </div>
+<!-- Bandes rayées le long des bords gauche et droit (décor) -->
+<div class="bande bande-gauche" aria-hidden="true"></div>
+<div class="bande bande-droite" aria-hidden="true"></div>
+
+<!-- Bouton du menu (téléphone et tablette) -->
+<button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu" id="menu-bouton" aria-label="Ouvrir le menu">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
+
+<!-- EN-TÊTE -->
+<header class="entete-page">
+  <a href="index.html" aria-label="Beck's Kitchen, page d'accueil">
+    <img class="hero-logo" src="images/logos/logo-beckskitchen-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
+  </a>
+  <nav aria-label="Menu principal">
+    <ul class="menu" id="menu">
+      <li><a href="index.html#concept">Le concept</a></li>
+      <li><a href="index.html#tarifs">Tarifs</a></li>
+      <li><a href="index.html#questions">Questions</a></li>
+      <li><a href="index.html#rendez-vous">Rendez-vous</a></li>
+      <li><a href="index.html#devenir-cuisiniere">Devenir cuisinier·e</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="mentions">
-  <span class="tampon">Informations</span>
-  <h1>Mentions légales</h1>
+<div class="separateur" aria-hidden="true"></div>
 
-  <section class="ticket">
+<main class="section">
+  <div class="section-inner">
+
+  <p class="intitule">Informations</p>
+    <h1 class="titre">Mentions légales</h1>
+    <div class="mentions">
+
+  <section class="mentions-bloc">
     <h2>Éditeur du site</h2>
     <p>Rébecca Siena, entrepreneur individuel, sous le nom commercial Beck's Kitchen<br>
     SIRET 103 054 078 00011<br>
@@ -51,46 +59,48 @@
     <a href="mailto:contact@becks-kitchen.fr">contact@becks-kitchen.fr</a></p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Directrice de la publication</h2>
     <p>Rébecca Siena</p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Hébergeur</h2>
     <p>GitHub, Inc.<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Services à la personne</h2>
     <p>Chaque cuisinière est un organisme déclaré et facture sous sa propre déclaration.</p>
     <p>Rébecca Siena : SAP103054078.<br>Élodie Vaillant Guy : SAP487983140.</p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Propriété intellectuelle</h2>
     <p>Les textes, logos et visuels du site appartiennent à Beck's Kitchen ; toute reproduction sans autorisation est interdite.</p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Données personnelles</h2>
     <p>Les informations du formulaire servent uniquement à vous recontacter, ne sont pas transmises à des tiers en dehors de la cuisinière qui intervient chez vous, et peuvent être supprimées sur simple demande.</p>
   </section>
 
-  <section class="ticket">
+  <section class="mentions-bloc">
     <h2>Cookies</h2>
     <p>Aucun cookie de suivi.</p>
   </section>
 
-  <div class="boutons retour" style="justify-content:flex-start;">
-    <a href="index.html" class="btn btn-contour">← Retour à l'accueil</a>
+    <div class="boutons retour">
+      <a href="index.html" class="btn">← Retour à l'accueil</a>
+    </div>
+    </div>
   </div>
 </main>
 
 <!-- PIED DE PAGE -->
 <footer class="pied">
   <div class="pied-inner">
-    <img class="pied-logo" src="images/logos/logo-bk-creme.png" alt="BK, monogramme Beck's Kitchen">
+    <img class="pied-logo" src="images/logos/logo-bk-rouge.png" alt="BK, monogramme Beck's Kitchen">
     <p class="pied-accroche">Batch cooking à domicile dans les Yvelines et le Val d'Oise</p>
     <!-- LIENS PROVISOIRES : Instagram et Facebook, à remplacer au lancement -->
     <p class="pied-liens">
