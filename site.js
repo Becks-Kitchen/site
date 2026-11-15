@@ -73,3 +73,20 @@ document.querySelectorAll('[data-provisoire]').forEach(function (a) {
   construirePoints();
   window.addEventListener('resize', function () { construirePoints(); allerA(Math.min(courant, indexMax())); });
 })();
+
+/* ── Menu : le lien de la section affichée passe en rouge ── */
+(function () {
+  const liens = Array.from(document.querySelectorAll('#menu a[href^="#"]'));
+  if (!liens.length || !('IntersectionObserver' in window)) return;
+  const parId = {};
+  liens.forEach(function (a) { parId[a.getAttribute('href').slice(1)] = a; });
+  const obs = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      liens.forEach(function (a) { a.classList.remove('actif'); a.removeAttribute('aria-current'); });
+      const a = parId[e.target.id];
+      if (a) { a.classList.add('actif'); a.setAttribute('aria-current', 'true'); }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  Object.keys(parId).forEach(function (id) { const el = document.getElementById(id); if (el) obs.observe(el); });
+})();

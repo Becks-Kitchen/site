@@ -24,7 +24,7 @@
 </script>
 <meta name="theme-color" content="#fbf2e1">
 <link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="preload" href="fonts/barlow-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bowlby-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,10 +34,6 @@
    class="sap-fixed" title="Beck's Kitchen — organismes déclarés Services à la personne">
   <img src="sap-traceur.png" alt="Services à la personne — organisme déclaré">
 </a>
-
-<!-- Bandes rayées le long des bords gauche et droit (décor) -->
-<div class="bande bande-gauche" aria-hidden="true"></div>
-<div class="bande bande-droite" aria-hidden="true"></div>
 
 <!-- Bouton du menu (téléphone et tablette) -->
 <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu" id="menu-bouton" aria-label="Ouvrir le menu">
@@ -49,10 +45,10 @@
 <!-- 1. HÉRO -->
 <header class="hero" id="hero">
   <div class="hero-haut">
-    <img class="hero-logo" src="images/logos/logo-beckskitchen-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
+    <img class="hero-logo" src="images/logos/logo-beckskitchen-1ligne-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
     <h1>Vos repas de la semaine, cuisinés chez vous.</h1>
     <p class="hero-sous-titre">Batch cooking à domicile · Yvelines (78) et Val d'Oise (95)</p>
-    <nav aria-label="Menu principal">
+    <nav class="bande-menu" aria-label="Menu principal">
       <ul class="menu" id="menu">
         <li><a href="#concept">Le concept</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
@@ -62,22 +58,18 @@
       </ul>
     </nav>
     <div class="boutons">
-      <a href="#tarifs" class="btn" data-ouvrir-simulateur>Estimer mon tarif</a>
-      <a href="#rendez-vous" class="btn">Prendre rendez-vous</a>
+      <a href="#tarifs" class="btn btn-rose" data-ouvrir-simulateur>Estimer mon tarif</a>
+      <a href="#rendez-vous" class="btn btn-jaune">Prendre rendez-vous</a>
     </div>
   </div>
   <!-- PHOTO PROVISOIRE : remplacer images/hero.jpg par une photo de session (mains et légumes, sans visage) -->
   <div class="hero-photo provisoire">
     <img src="images/hero.jpg" alt="Mains d'une cuisinière qui coupe des carottes sur une planche en bois, pendant une session de batch cooking à domicile">
   </div>
-  <a href="#concept" class="chevron" aria-label="Descendre vers le concept">
-    <svg viewBox="0 0 60 44" aria-hidden="true"><path d="M4 6 C12 14 22 28 29 39 C33 30 44 16 56 4 C50 4 46 6 42 10 C37 16 33 22 30 28 C25 20 19 12 13 5 C10 4 7 4 4 6 Z"/></svg>
-  </a>
 </header>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 2. COMMENT ÇA FONCTIONNE -->
-<section class="section" id="concept">
+<section class="section bloc bloc-rose" id="concept">
   <div class="section-inner">
     <p class="intitule">Le concept</p>
     <h2 class="titre">Comment ça fonctionne ?</h2>
@@ -103,13 +95,12 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 3. CE QUE ÇA CHANGE -->
-<section class="section" id="benefices">
+<section class="section bloc bloc-rouge" id="benefices">
   <div class="section-inner">
-    <p class="intitule">Ce que ça change</p>
     <h2 class="titre">Pour vous, concrètement</h2>
-    <div class="grille grille-4">
+    <p class="intitule intitule-dessous">Ce que ça change</p>
+    <div class="grille grille-2">
       <div class="colonne"><div class="num">01</div>
         <h3>Du temps retrouvé</h3>
         <p>Deux à trois heures récupérées chaque semaine, et plus jamais « qu'est-ce qu'on mange ce soir ? »</p>
@@ -130,12 +121,11 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 4. LES PLATS DU MOMENT -->
-<section class="section" id="plats">
+<section class="section bloc bloc-creme" id="plats">
   <div class="section-inner">
-    <p class="intitule">Saison automne</p>
     <h2 class="titre">Ce qui mijote en ce moment</h2>
+    <p class="intitule intitule-dessous">Saison automne</p>
     <!-- PHOTOS PROVISOIRES (site La Becquée) : remplacer les fichiers dans images/plats/ en gardant les mêmes noms -->
     <div class="carrousel">
       <div class="carrousel-fenetre">
@@ -155,14 +145,13 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 5. TARIFS ET SIMULATEUR -->
-<section class="section" id="tarifs">
+<section class="section bloc bloc-vert" id="tarifs">
   <div class="sim-inner">
     <p class="intitule">Tarifs</p>
-    <h2 class="titre">Un tarif <em>clair</em>, calculé pour votre foyer</h2>
+    <h2 class="titre">Un tarif clair, calculé pour votre foyer</h2>
     <p class="accroche">Estimez votre prestation en quelques secondes, crédit d'impôt compris.</p>
-    <button class="btn" type="button" id="btn-estimer" aria-expanded="false" aria-controls="sim-wrap" onclick="toggleSim(this)">
+    <button class="btn btn-rose" type="button" id="btn-estimer" aria-expanded="false" aria-controls="sim-wrap" onclick="toggleSim(this)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
       Estimer mon tarif
     </button>
@@ -209,9 +198,8 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 6. NOS CUISINIÈRES (pas de portrait dans cette version) -->
-<section class="section" id="cuisinieres">
+<section class="section bloc bloc-jaune" id="cuisinieres">
   <div class="section-inner">
     <div class="cuisinieres-texte">
       <p class="intitule">Nos cuisinières</p>
@@ -228,9 +216,8 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 7. QUESTIONS FRÉQUENTES -->
-<section class="section" id="questions">
+<section class="section bloc bloc-bleu" id="questions">
   <div class="section-inner">
     <div>
       <p class="intitule">Questions</p>
@@ -248,9 +235,8 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 8. RENDEZ-VOUS -->
-<section class="section" id="rendez-vous">
+<section class="section bloc bloc-creme" id="rendez-vous">
   <div class="section-inner">
     <div>
       <p class="intitule">Rendez-vous</p>
@@ -258,8 +244,8 @@
       <p class="accroche">Un premier échange de 30 minutes, en visio ou par téléphone, gratuit et sans engagement. Choisissez votre département pour réserver un créneau.</p>
     </div>
     <div class="rdv-boutons">
-      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn">Prendre rendez-vous · Yvelines (78)</a>
-      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn">Prendre rendez-vous · Val d'Oise (95)</a>
+      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn btn-rose">Prendre rendez-vous · Yvelines (78)</a>
+      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn btn-jaune">Prendre rendez-vous · Val d'Oise (95)</a>
     </div>
     <p class="rdv-ecrire">Vous hésitez ou préférez écrire ? Laissez-nous un message, nous vous recontactons.</p>
 
@@ -309,9 +295,8 @@
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 9. DEVENIR CUISINIER·E BECK'S KITCHEN -->
-<section class="section" id="devenir-cuisiniere">
+<section class="section bloc bloc-rose" id="devenir-cuisiniere">
   <div class="section-inner">
     <p class="intitule">Rejoindre le réseau</p>
     <h2 class="titre">Et si vous deveniez cuisinier·e Beck's Kitchen ?</h2>
@@ -340,21 +325,20 @@
     </div>
 
     <div class="boutons">
-      <a href="mailto:contact@becks-kitchen.fr?subject=Devenir%20cuisinier%C2%B7e%20Beck's%20Kitchen" class="btn">Je veux en savoir plus</a>
+      <a href="mailto:contact@becks-kitchen.fr?subject=Devenir%20cuisinier%C2%B7e%20Beck's%20Kitchen" class="btn btn-jaune">Je veux en savoir plus</a>
     </div>
   </div>
 </section>
 
-<div class="separateur" aria-hidden="true"></div>
 <!-- 10. DERNIER APPEL -->
-<section class="section dernier-appel" id="dernier-appel">
+<section class="section bloc bloc-rouge dernier-appel" id="dernier-appel">
   <div class="boite">
     <h2 class="titre">Une semaine qui vous ressemble ?</h2>
     <p>Un premier échange gratuit de 30 minutes, sans engagement.</p>
     <div class="boutons">
-      <a href="#tarifs" class="btn" data-ouvrir-simulateur>Estimer mon tarif</a>
-      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn">Rendez-vous Yvelines</a>
-      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn">Rendez-vous Val d'Oise</a>
+      <a href="#tarifs" class="btn btn-rose" data-ouvrir-simulateur>Estimer mon tarif</a>
+      <a href="https://calendly.com/labecquee78/30min" target="_blank" rel="noopener" class="btn btn-jaune">Rendez-vous Yvelines</a>
+      <a href="https://calendly.com/elodie-vaillant" target="_blank" rel="noopener" class="btn btn-jaune">Rendez-vous Val d'Oise</a>
     </div>
   </div>
 </section>
@@ -362,9 +346,9 @@
 </main>
 
 <!-- PIED DE PAGE -->
-<footer class="pied">
+<footer class="pied bloc bloc-creme">
   <div class="pied-inner">
-    <img class="pied-logo" src="images/logos/logo-bk-rouge.png" alt="BK, monogramme Beck's Kitchen">
+    <img class="pied-logo" src="images/logos/logo-bk-creme.png" alt="BK, monogramme Beck's Kitchen">
     <p class="pied-accroche">Batch cooking à domicile dans les Yvelines et le Val d'Oise</p>
     <p class="pied-ancien-nom">Beck's Kitchen, anciennement La Becquée</p>
     <!-- LIENS PROVISOIRES : Instagram et Facebook, à remplacer au lancement -->

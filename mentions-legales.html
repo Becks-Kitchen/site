@@ -19,10 +19,6 @@
   <img src="sap-traceur.png" alt="Services à la personne — organisme déclaré">
 </a>
 
-<!-- Bandes rayées le long des bords gauche et droit (décor) -->
-<div class="bande bande-gauche" aria-hidden="true"></div>
-<div class="bande bande-droite" aria-hidden="true"></div>
-
 <!-- Bouton du menu (téléphone et tablette) -->
 <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu" id="menu-bouton" aria-label="Ouvrir le menu">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -31,9 +27,9 @@
 <!-- EN-TÊTE -->
 <header class="entete-page">
   <a href="index.html" aria-label="Beck's Kitchen, page d'accueil">
-    <img class="hero-logo" src="images/logos/logo-beckskitchen-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
+    <img class="hero-logo" src="images/logos/logo-beckskitchen-1ligne-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
   </a>
-  <nav aria-label="Menu principal">
+  <nav class="bande-menu" aria-label="Menu principal">
     <ul class="menu" id="menu">
       <li><a href="index.html#concept">Le concept</a></li>
       <li><a href="index.html#tarifs">Tarifs</a></li>
@@ -44,9 +40,7 @@
   </nav>
 </header>
 
-<div class="separateur" aria-hidden="true"></div>
-
-<main class="section">
+<main class="section bloc bloc-creme">
   <div class="section-inner">
 
   <p class="intitule">Informations</p>
@@ -93,16 +87,16 @@
   </section>
 
     <div class="boutons retour">
-      <a href="index.html" class="btn">← Retour à l'accueil</a>
+      <a href="index.html" class="btn btn-rose">← Retour à l'accueil</a>
     </div>
     </div>
   </div>
 </main>
 
 <!-- PIED DE PAGE -->
-<footer class="pied">
+<footer class="pied bloc bloc-creme">
   <div class="pied-inner">
-    <img class="pied-logo" src="images/logos/logo-bk-rouge.png" alt="BK, monogramme Beck's Kitchen">
+    <img class="pied-logo" src="images/logos/logo-bk-creme.png" alt="BK, monogramme Beck's Kitchen">
     <p class="pied-accroche">Batch cooking à domicile dans les Yvelines et le Val d'Oise</p>
     <p class="pied-ancien-nom">Beck's Kitchen, anciennement La Becquée</p>
     <!-- LIENS PROVISOIRES : Instagram et Facebook, à remplacer au lancement -->
