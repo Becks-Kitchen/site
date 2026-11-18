@@ -25,7 +25,7 @@
   --rose-fond: #fcbfcc;
   --jaune:     #f4c85b;
   --vert:      #1a5a4d;
-  --bleu:      #81def9;
+  --bleu:      #aad5f5;   /* choisi par Rébecca (18/11/2026) à la place du #81def9 de la maquette */
   --creme:     #fff0de;
   --rayure:    #ffe1de;
   --rayure-fond: #fff5e8;
@@ -122,7 +122,7 @@ a { color: inherit; }
   position: relative; z-index: 2; width: min(640px, calc(100% - 2 * var(--marge)));
   margin: 30px auto calc(-1 * var(--chevauche));
 }
-.hero-photo img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
+.hero-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .hero + .bloc { padding-top: calc(clamp(60px, 9vw, 110px) + 48px); }
 
 /* Emplacement provisoire (photo à venir) */
@@ -263,12 +263,8 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
 /* ── Nos cuisinières ── */
 .cuisinieres-texte { max-width: 700px; margin: 0 auto 36px; }
 .cuisinieres-texte .accroche { margin-bottom: 14px; font-weight: 500; }
-.cuisinieres-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.cuisinieres-photos img { width: 100%; aspect-ratio: 1; object-fit: cover; }
-@media (max-width: 640px) {
-  .cuisinieres-photos { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .cuisinieres-photos img:first-child { grid-column: 1 / -1; aspect-ratio: 2 / 1; }
-}
+.cuisinieres-photo { max-width: 760px; margin: 0 auto; }
+.cuisinieres-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
 /* ── Questions : sur bleu, séparées par un trait fin crème ── */
 .questions { max-width: 620px; margin: 0 auto; text-align: left; border-top: 1px solid var(--creme); }
