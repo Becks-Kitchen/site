@@ -418,14 +418,14 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preload" href="fonts/bowlby-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261122">
 </head>
 <body>
 
 <!-- LOGO SERVICES À LA PERSONNE (obligatoire, ne jamais retirer) -->
 <a href="https://www.servicesalapersonne.gouv.fr" target="_blank" rel="noopener noreferrer"
    class="sap-fixed" title="Beck's Kitchen — organismes déclarés Services à la personne">
-  <img src="sap-traceur.png" alt="Services à la personne — organisme déclaré">
+  <img src="sap-traceur.png" width="180" height="149" alt="Services à la personne — organisme déclaré">
 </a>
 
 <!-- Bouton du menu (téléphone et tablette) -->
@@ -438,7 +438,7 @@
 <!-- 1. HÉRO -->
 <header class="hero" id="hero">
   <div class="hero-haut">
-    <img class="hero-logo" src="images/logos/logo-beckskitchen-1ligne-accroche-rouge.png" alt="Beck's Kitchen, batch cooking">
+    <img class="hero-logo" src="images/logos/logo-beckskitchen-1ligne-accroche-rouge.png" width="760" height="190" alt="Beck's Kitchen, batch cooking">
     <h1>Vos repas de la semaine, cuisinés chez vous.</h1>
     <p class="hero-sous-titre">Batch cooking à domicile · Yvelines (78) et Val d'Oise (95)</p>
     <nav class="bande-menu" aria-label="Menu principal">
@@ -457,7 +457,7 @@
   </div>
   <!-- Photo du héro : images/hero.jpg (repas d'une session, vus du dessus) -->
   <div class="hero-photo">
-    <img src="images/hero.jpg" alt="Les plats d'une session de batch cooking posés sur une table en bois : cuisses de poulet et pommes de terre en cocotte, rouleaux de printemps et leur sauce, fenouil braisé, asperges rôties, carottes rôties, purée de légumes, pain maison et pâte à pizza">
+    <picture><source srcset="images/hero.webp" type="image/webp"><img fetchpriority="high" src="images/hero.jpg" width="1280" height="960" alt="Les plats d'une session de batch cooking posés sur une table en bois : cuisses de poulet et pommes de terre en cocotte, rouleaux de printemps et leur sauce, fenouil braisé, asperges rôties, carottes rôties, purée de légumes, pain maison et pâte à pizza"></picture>
   </div>
 </header>
 
@@ -523,12 +523,12 @@
     <div class="carrousel">
       <div class="carrousel-fenetre">
         <div class="carrousel-piste" id="carrousel-piste">
-          <div class="plat"><img class="plat-photo" src="images/plats/tarte-potimarron.jpg" alt="Tarte au potimarron, coupée en parts" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Tarte au potimarron</div></div></div>
-          <div class="plat"><img class="plat-photo" src="images/plats/assiette-palette.jpg" alt="Assiette de palette mijotée et ses légumes" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Palette mijotée</div></div></div>
-          <div class="plat"><img class="plat-photo" src="images/plats/carottes-rotis.jpg" alt="Carottes rôties au four" loading="lazy"><div class="plat-info"><div class="plat-cat">Accompagnement</div><div class="plat-nom">Carottes rôties</div></div></div>
-          <div class="plat"><img class="plat-photo" src="images/plats/polpette.jpg" alt="Polpette, boulettes de viande en sauce tomate" loading="lazy"><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Polpette</div></div></div>
-          <div class="plat"><img class="plat-photo" src="images/plats/granola.jpg" alt="Granola maison en bocal" loading="lazy"><div class="plat-info"><div class="plat-cat">Petit-déjeuner</div><div class="plat-nom">Granola</div></div></div>
-          <div class="plat"><img class="plat-photo" src="images/plats/cookies-choco.jpg" alt="Cookies aux pépites de chocolat" loading="lazy"><div class="plat-info"><div class="plat-cat">Goûter</div><div class="plat-nom">Cookies au chocolat</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/tarte-potimarron.webp" type="image/webp"><img class="plat-photo" src="images/plats/tarte-potimarron.jpg" width="800" height="759" alt="Tarte au potimarron, coupée en parts" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Tarte au potimarron</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/assiette-palette.webp" type="image/webp"><img class="plat-photo" src="images/plats/assiette-palette.jpg" width="800" height="600" alt="Assiette de palette mijotée et ses légumes" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Palette mijotée</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/carottes-rotis.webp" type="image/webp"><img class="plat-photo" src="images/plats/carottes-rotis.jpg" width="800" height="600" alt="Carottes rôties au four" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Accompagnement</div><div class="plat-nom">Carottes rôties</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/polpette.webp" type="image/webp"><img class="plat-photo" src="images/plats/polpette.jpg" width="800" height="1066" alt="Polpette, boulettes de viande en sauce tomate" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Plat</div><div class="plat-nom">Polpette</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/granola.webp" type="image/webp"><img class="plat-photo" src="images/plats/granola.jpg" width="800" height="1200" alt="Granola maison en bocal" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Petit-déjeuner</div><div class="plat-nom">Granola</div></div></div>
+          <div class="plat"><picture><source srcset="images/plats/cookies-choco.webp" type="image/webp"><img class="plat-photo" src="images/plats/cookies-choco.jpg" width="800" height="600" alt="Cookies aux pépites de chocolat" loading="lazy"></picture><div class="plat-info"><div class="plat-cat">Goûter</div><div class="plat-nom">Cookies au chocolat</div></div></div>
         </div>
       </div>
       <button class="carrousel-fleche prec" id="carr-prec" type="button" aria-label="Plat précédent">&#8249;</button>
@@ -604,7 +604,7 @@
     </div>
     <!-- Photo de la section : images/cuisinieres.jpg (choisie par Rébecca le 18/11/2026) -->
     <div class="cuisinieres-photo">
-      <img src="images/cuisinieres.jpg" alt="Deux cuisinières Beck's Kitchen en tablier, souriantes, qui cuisinent ensemble dans une cuisine" loading="lazy">
+      <picture><source srcset="images/cuisinieres.webp" type="image/webp"><img src="images/cuisinieres.jpg" width="1280" height="960" alt="Deux cuisinières Beck's Kitchen en tablier, souriantes, qui cuisinent ensemble dans une cuisine" loading="lazy"></picture>
     </div>
   </div>
 </section>
@@ -679,7 +679,7 @@
           </form>
         </div>
         <div class="form-success" id="form-success" role="status">
-          <img src="images/illustrations/feuille.png" alt="">
+          <img src="images/illustrations/feuille.png" width="400" height="400" alt="">
           <h3>Message envoyé !</h3>
           <p>Merci de votre confiance. Nous revenons vers vous sous 24 h.</p>
         </div>
@@ -741,7 +741,7 @@
 <!-- PIED DE PAGE -->
 <footer class="pied bloc bloc-creme">
   <div class="pied-inner">
-    <img class="pied-logo" src="images/logos/logo-bk-creme.png" alt="BK, monogramme Beck's Kitchen">
+    <img class="pied-logo" src="images/logos/logo-bk-creme.png" width="420" height="420" alt="BK, monogramme Beck's Kitchen">
     <p class="pied-accroche">Batch cooking à domicile dans les Yvelines et le Val d'Oise</p>
     <p class="pied-ancien-nom">Beck's Kitchen, anciennement La Becquée</p>
     <p class="pied-liens">

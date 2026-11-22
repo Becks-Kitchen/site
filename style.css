@@ -54,7 +54,7 @@ body {
     url('images/fond-rayures-carrousel-01.png') center top / 560px auto repeat,
     var(--rayure-fond);
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--vert); outline-offset: 3px; }
 
@@ -369,3 +369,6 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
   html { scroll-behavior: auto; }
   .carrousel-piste, .sim-wrap.open { transition: none; animation: none; }
 }
+
+/* Images en WebP avec JPG de secours */
+picture { display: block; }
