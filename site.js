@@ -16,12 +16,6 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fermer(); });
 })();
 
-/* ── Liens provisoires (Instagram, Facebook) : ne remontent pas en haut de page ── */
-document.querySelectorAll('[data-provisoire]').forEach(function (a) {
-  a.addEventListener('click', function (e) { e.preventDefault(); });
-  a.title = 'Bientôt disponible';
-});
-
 /* ── Carrousel (translateX en %, aucune mesure en pixels) ──
    La piste a la largeur de la fenêtre : décaler d'une carte = 100 % / nombre de cartes visibles. */
 (function () {

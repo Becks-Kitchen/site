@@ -259,6 +259,8 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
 .sw-note { padding: 10px 0 0; font-size: .9rem; font-style: italic; }
 .sw-note:empty { display: none; }
 .sim-mention { margin-top: 28px; font-size: .95rem; }
+.sim-exemple { margin-top: 28px; font-weight: 600; color: var(--creme); }
+.sim-exemple + .sim-mention { margin-top: 10px; }
 
 /* ── Nos cuisinières ── */
 .cuisinieres-texte { max-width: 700px; margin: 0 auto 36px; }
@@ -348,6 +350,7 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
 .pied-liens { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; font-weight: 500; }
 .pied a { color: var(--rouge-texte); }
 .pied-mentions { font-size: .85rem; }
+.pied-maj { font-size: .8rem; font-style: italic; }
 .pied-communes { font-size: .8rem; line-height: 1.8; margin-top: 14px; color: var(--vert); }
 .pied-communes strong { display: block; font-weight: 700; color: var(--rouge-texte); font-size: .92rem; margin-bottom: 4px; }
 
