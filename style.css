@@ -363,6 +363,8 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
 .mentions-bloc:first-child { border-top: 1px solid var(--rose); }
 .mentions h2 { font-weight: 700; font-size: 1.05rem; color: var(--rouge-texte); margin-bottom: 4px; }
 .mentions p + p { margin-top: 8px; }
+.mentions ul { margin: 6px 0 0 1.2em; }
+.mentions li + li { margin-top: 6px; }
 .mentions .retour { margin-top: 34px; justify-content: flex-start; }
 
 @media (prefers-reduced-motion: reduce) {
