@@ -5,18 +5,384 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beck's Kitchen · Batch cooking à domicile Yvelines et Val d'Oise</title>
 <meta name="description" content="Batch cooking à domicile en Yvelines (78) et Val d'Oise (95) : nos cuisinières préparent vos repas de la semaine chez vous. Anciennement La Becquée.">
+<!-- À COMPLÉTER : numéro de téléphone (champ "telephone" du LocalBusiness), à ajouter seulement s'il est fourni -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Beck's Kitchen",
-  "alternateName": "La Becquée",
-  "description": "Batch cooking à domicile : nos cuisinières préparent vos repas de la semaine chez vous.",
-  "url": "https://beckskitchen.fr/",
-  "email": "contact@becks-kitchen.fr",
-  "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Yvelines (78)" },
-    { "@type": "AdministrativeArea", "name": "Val d'Oise (95)" }
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://beckskitchen.fr/#entreprise",
+      "name": "Beck's Kitchen",
+      "alternateName": "La Becquée",
+      "description": "Batch cooking à domicile : nos cuisinières préparent vos repas de la semaine chez vous.",
+      "url": "https://beckskitchen.fr/",
+      "email": "contact@becks-kitchen.fr",
+      "logo": "https://beckskitchen.fr/images/logos/logo-beckskitchen-1ligne-accroche-rouge.png",
+      "image": "https://beckskitchen.fr/images/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mézy-sur-Seine",
+        "postalCode": "78250",
+        "addressCountry": "FR"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Rébecca Siena"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Yvelines (78)"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Val d'Oise (95)"
+        },
+        {
+          "@type": "City",
+          "name": "Andrésy"
+        },
+        {
+          "@type": "City",
+          "name": "Arronville"
+        },
+        {
+          "@type": "City",
+          "name": "Aubergenville"
+        },
+        {
+          "@type": "City",
+          "name": "Auvers-sur-Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Beaumont-sur-Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Boisemont"
+        },
+        {
+          "@type": "City",
+          "name": "Bonnières-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Butry-sur-Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Cergy"
+        },
+        {
+          "@type": "City",
+          "name": "Champagne-sur-Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Chanteloup-les-Vignes"
+        },
+        {
+          "@type": "City",
+          "name": "Chapet"
+        },
+        {
+          "@type": "City",
+          "name": "Conflans-Sainte-Honorine"
+        },
+        {
+          "@type": "City",
+          "name": "Courdimanche"
+        },
+        {
+          "@type": "City",
+          "name": "Ennery"
+        },
+        {
+          "@type": "City",
+          "name": "Épône"
+        },
+        {
+          "@type": "City",
+          "name": "Flins-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Frouville"
+        },
+        {
+          "@type": "City",
+          "name": "Gargenville"
+        },
+        {
+          "@type": "City",
+          "name": "Hardricourt"
+        },
+        {
+          "@type": "City",
+          "name": "Hédouville"
+        },
+        {
+          "@type": "City",
+          "name": "Juziers"
+        },
+        {
+          "@type": "City",
+          "name": "L'Isle-Adam"
+        },
+        {
+          "@type": "City",
+          "name": "Labbeville"
+        },
+        {
+          "@type": "City",
+          "name": "Les Mureaux"
+        },
+        {
+          "@type": "City",
+          "name": "Limay"
+        },
+        {
+          "@type": "City",
+          "name": "Livilliers"
+        },
+        {
+          "@type": "City",
+          "name": "Mantes-la-Jolie"
+        },
+        {
+          "@type": "City",
+          "name": "Mantes-la-Ville"
+        },
+        {
+          "@type": "City",
+          "name": "Menucourt"
+        },
+        {
+          "@type": "City",
+          "name": "Mériel"
+        },
+        {
+          "@type": "City",
+          "name": "Méry-sur-Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Meulan-en-Yvelines"
+        },
+        {
+          "@type": "City",
+          "name": "Mézy-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Nesle-la-Vallée"
+        },
+        {
+          "@type": "City",
+          "name": "Osny"
+        },
+        {
+          "@type": "City",
+          "name": "Parmain"
+        },
+        {
+          "@type": "City",
+          "name": "Poissy"
+        },
+        {
+          "@type": "City",
+          "name": "Pontoise"
+        },
+        {
+          "@type": "City",
+          "name": "Ronquerolles"
+        },
+        {
+          "@type": "City",
+          "name": "Rosny-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Germain-en-Laye"
+        },
+        {
+          "@type": "City",
+          "name": "Triel-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Vallangoujard"
+        },
+        {
+          "@type": "City",
+          "name": "Valmondois"
+        },
+        {
+          "@type": "City",
+          "name": "Vauréal"
+        },
+        {
+          "@type": "City",
+          "name": "Vaux-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Verneuil-sur-Seine"
+        },
+        {
+          "@type": "City",
+          "name": "Vernouillet"
+        }
+      ],
+      "priceRange": "À partir de 83,50 € par prestation, à titre indicatif",
+      "sameAs": [
+        "https://www.instagram.com/beckskitchen_batchcooking/",
+        "https://www.facebook.com/beckskitchen/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://beckskitchen.fr/#service",
+      "name": "Batch cooking à domicile",
+      "serviceType": "Batch cooking à domicile",
+      "description": "Une cuisinière vient chez vous, prépare les repas de la semaine dans votre cuisine et repart en laissant la cuisine propre. Service à la personne déclaré : 50 % de crédit d'impôt.",
+      "provider": {
+        "@id": "https://beckskitchen.fr/#entreprise"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Yvelines (78)"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Val d'Oise (95)"
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "5 repas pour 1 personne",
+          "price": "83.50",
+          "priceCurrency": "EUR",
+          "description": "À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        },
+        {
+          "@type": "Offer",
+          "name": "5 repas pour 2 adultes",
+          "price": "117.00",
+          "priceCurrency": "EUR",
+          "description": "À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        },
+        {
+          "@type": "Offer",
+          "name": "5 repas pour 2 adultes et 2 enfants",
+          "price": "183.50",
+          "priceCurrency": "EUR",
+          "description": "À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        },
+        {
+          "@type": "Offer",
+          "name": "Option courses",
+          "price": "50.00",
+          "priceCurrency": "EUR",
+          "description": "Par prestation, hors prix des ingrédients. À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        },
+        {
+          "@type": "Offer",
+          "name": "Option petits pots bébé",
+          "price": "50.00",
+          "priceCurrency": "EUR",
+          "description": "Par prestation. À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        },
+        {
+          "@type": "Offer",
+          "name": "Option petit-déjeuner et goûters",
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "20.00",
+            "maxPrice": "50.00",
+            "priceCurrency": "EUR"
+          },
+          "description": "Selon la taille du foyer. À titre indicatif : chaque cuisinière fixe ses prix et confirme le tarif par un devis gratuit après l'appel découverte. 50 % du montant est rendu en crédit d'impôt."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://beckskitchen.fr/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne le crédit d'impôt ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nos cuisinières sont des organismes de services à la personne déclarés. 50 % du coût de la prestation vous est rendu en crédit d'impôt, dans la limite de 12 000 € de dépenses par an, majorée de 1 500 € par enfant à charge (15 000 € au plus). Vous recevez une attestation fiscale chaque année."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qui achète les ingrédients ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vous faites les courses vous-même avec la liste que nous vous envoyons, ou votre cuisinière s'en charge pour 50 € par prestation, hors prix des ingrédients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vous adaptez-vous aux allergies et aux régimes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Tout est noté lors de l'appel découverte, pour chaque membre du foyer : allergies, régimes, goûts et dégoûts. Les menus sont construits à partir de là."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De quoi avez-vous besoin dans ma cuisine ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une cuisine équipée classique : plaques, four, quelques casseroles. Pour la première session, nous apportons des boîtes de conservation si besoin. Pour les suivantes, il vous suffira d'en avoir assez chez vous."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps se conservent les plats ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De 2 à 4 jours au réfrigérateur selon les plats. Après chaque prestation, vous recevez les instructions de conservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dois-je être présent pendant la session ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour la première session, c'est préférable : nous faisons connaissance avec vous et avec votre cuisine. Ensuite, vous pouvez nous confier vos clés et nous travaillons en toute autonomie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je annuler ou décaler une session ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui : vous pouvez décaler une session jusqu'à 48 heures avant, et l'annuler jusqu'à une semaine avant."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://beckskitchen.fr/#site",
+      "url": "https://beckskitchen.fr/",
+      "name": "Beck's Kitchen",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://beckskitchen.fr/#entreprise"
+      }
+    }
   ]
 }
 </script>
