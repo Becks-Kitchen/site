@@ -1,0 +1,43 @@
+# Beck's Kitchen
+
+> Batch cooking à domicile dans les Yvelines (78) et le Val d'Oise (95). Une cuisinière vient chez le client, prépare les repas de la semaine dans sa cuisine, puis repart en laissant la cuisine propre. Anciennement La Becquée.
+
+## L'activité
+
+- Nom : Beck's Kitchen (anciennement La Becquée, site la-becquee.fr, qui renvoie désormais ici).
+- Activité : batch cooking (préparation des repas de la semaine) au domicile du client.
+- Fonctionnement : un réseau de cuisinières indépendantes, chacune dans son secteur, qui suivent la même méthode et le même carnet de recettes.
+- Service à la personne déclaré : 50 % du coût de la prestation (hors ingrédients) est rendu en crédit d'impôt, dans la limite de 12 000 € de dépenses par an, majorée de 1 500 € par enfant à charge (15 000 € au plus).
+
+## Comment ça se passe
+
+1. Un appel découverte gratuit de 30 minutes (goûts, quotidien, contraintes, allergies), puis la présentation de la cuisinière.
+2. La cuisinière vient cuisiner chez le client les repas de la semaine ; elle peut faire les courses (option à 50 € par prestation, hors prix des ingrédients).
+3. Le client réchauffe ou compose ses repas en quelques minutes. Les plats se conservent 2 à 4 jours au réfrigérateur selon les plats.
+
+## Tarifs (à titre indicatif)
+
+Chaque cuisinière fixe ses prix ; voici les prix conseillés utilisés par le simulateur du site :
+- 5 repas pour 1 personne : 83,50 € par prestation, soit 41,75 € après crédit d'impôt.
+- 5 repas pour 2 adultes : 117 € par prestation, soit 58,50 € après crédit d'impôt.
+- 5 repas pour 2 adultes et 2 enfants : 183,50 € par prestation, soit 91,75 € après crédit d'impôt.
+- Options : petit-déjeuner et goûters de 20 à 50 € selon la taille du foyer, petits pots bébé 50 €, courses 50 €.
+- Première prestation : 10 € offerts.
+- Un devis gratuit est confirmé par la cuisinière après l'appel découverte.
+
+## Zone desservie
+
+Yvelines (78) et Val d'Oise (95). Communes : Andrésy, Arronville, Aubergenville, Auvers-sur-Oise, Beaumont-sur-Oise, Boisemont, Bonnières-sur-Seine, Butry-sur-Oise, Cergy, Champagne-sur-Oise, Chanteloup-les-Vignes, Chapet, Conflans-Sainte-Honorine, Courdimanche, Ennery, Épône, Flins-sur-Seine, Frouville, Gargenville, Hardricourt, Hédouville, Juziers, L'Isle-Adam, Labbeville, Les Mureaux, Limay, Livilliers, Mantes-la-Jolie, Mantes-la-Ville, Menucourt, Mériel, Méry-sur-Oise, Meulan-en-Yvelines, Mézy-sur-Seine, Nesle-la-Vallée, Osny, Parmain, Poissy, Pontoise, Ronquerolles, Rosny-sur-Seine, Saint-Germain-en-Laye, Triel-sur-Seine, Vallangoujard, Valmondois, Vauréal, Vaux-sur-Seine, Verneuil-sur-Seine, Vernouillet.
+
+## Contact
+
+- E-mail : contact@becks-kitchen.fr (réponse sous 24 h)
+- Rendez-vous Yvelines : https://calendly.com/beckskitchen78/30min
+- Rendez-vous Val d'Oise : https://calendly.com/elodie-vaillant
+- Instagram : https://www.instagram.com/beckskitchen_batchcooking/
+- Facebook : https://www.facebook.com/beckskitchen/
+
+## Pages
+
+- [Accueil](https://beckskitchen.fr/) : le concept, les tarifs et le simulateur, les questions fréquentes, la prise de rendez-vous, devenir cuisinier·e Beck's Kitchen.
+- [Mentions légales](https://beckskitchen.fr/mentions-legales.html) : éditeur, hébergeur, numéros de déclaration services à la personne, données personnelles.
