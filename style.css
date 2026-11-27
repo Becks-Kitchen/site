@@ -374,3 +374,18 @@ main + .bloc, .pied { margin-bottom: var(--ecart-blocs); }
 
 /* Images en WebP avec JPG de secours */
 picture { display: block; }
+
+/* Formulaire : anti-spam caché, message d'erreur, adresse à copier */
+.anti-spam { display: none !important; }
+.form-submit:disabled { opacity: .7; cursor: wait; transform: none; }
+.form-erreur { margin-top: 18px; padding: 16px 18px; background: #fff; border: 2px solid var(--rouge-texte); color: var(--vert); }
+.form-erreur strong { color: var(--rouge-texte); }
+.form-erreur-adresse { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; }
+.form-erreur-adresse a { font-weight: 700; color: var(--vert); user-select: all; }
+.btn-copier { min-height: 40px; padding: 8px 16px; font-size: .8rem; }
+
+/* Adresse en clair à côté de « Je veux en savoir plus » */
+#devenir-cuisiniere .boutons { align-items: center; }
+.mail-clair { font-weight: 500; }
+.mail-clair a { font-weight: 700; color: var(--rouge-texte); }
+.mail-clair a, .form-erreur-adresse a { white-space: nowrap; }

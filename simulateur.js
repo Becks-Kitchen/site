@@ -80,18 +80,88 @@ document.querySelectorAll('[data-ouvrir-simulateur]').forEach(function (lien) {
   });
 });
 
-/* ── Formulaire de contact (celui de La Becquée, envoi par mailto) ── */
-function submitForm(e) {
+/* ── Formulaire de contact : envoi par Web3Forms ──
+   La clé d'accès Web3Forms est publique par conception (elle sert seulement
+   à désigner la boîte qui reçoit les messages) : elle peut rester ici. */
+const WEB3FORMS_CLE = 'b1ce1db2-5220-44d4-b993-74b277dc5334';
+const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
+
+async function submitForm(e) {
   e.preventDefault();
   const form = e.target;
+  const erreur = document.getElementById('form-erreur');
+  const bouton = document.getElementById('form-envoyer');
+  if (erreur) erreur.hidden = true;
+
+  // Champs obligatoires et e-mail valide
   const required = form.querySelectorAll('[required]');
   let valid = true;
-  required.forEach(f => { f.classList.remove('erreur'); if (!f.value.trim()) { f.classList.add('erreur'); valid = false; } });
+  required.forEach(f => {
+    f.classList.remove('erreur');
+    if (!f.value.trim() || (f.type === 'email' && !f.checkValidity())) { f.classList.add('erreur'); valid = false; }
+  });
   if (!valid) { form.querySelector('.erreur').focus(); return; }
+
   const d = Object.fromEntries(new FormData(form));
-  const sujet = encodeURIComponent(`Demande de contact — ${d.prenom} ${d.nom}`);
-  const corps = encodeURIComponent(`Bonjour,\n\nNom : ${d.prenom} ${d.nom}\nEmail : ${d.email}\nCommune : ${d.commune||'—'}\nFoyer : ${d.foyer||'—'}\nContraintes : ${d.contraintes||'—'}\nFormat : ${d.format||'—'}\nSource : ${d.source||'—'}\n\nMessage :\n${d.message}`);
-  window.location.href = `mailto:contact@becks-kitchen.fr?subject=${sujet}&body=${corps}`;
-  const fc = document.getElementById('form-container'); if (fc) fc.style.display = 'none';
-  const fs = document.getElementById('form-success'); if (fs) fs.classList.add('show');
+  const val = v => (v && String(v).trim()) || '—';
+  const sujet = `Nouvelle demande Beck's Kitchen — ${d.prenom.trim()} ${d.nom.trim()}` + (d.commune && d.commune.trim() ? ` — ${d.commune.trim()}` : '');
+
+  const donnees = {
+    access_key: WEB3FORMS_CLE,
+    subject: sujet,
+    from_name: "Site Beck's Kitchen",
+    replyto: d.email.trim(),
+    botcheck: form.querySelector('[name="botcheck"]').checked,
+    'Prénom': val(d.prenom),
+    'Nom': val(d.nom),
+    'E-mail': val(d.email),
+    'Commune': val(d.commune),
+    'Taille du foyer': val(d.foyer),
+    'Contraintes alimentaires': val(d.contraintes),
+    'Comment nous avez-vous connus ?': val(d.source),
+    "Format d'échange préféré": val(d.format),
+    'Message': val(d.message)
+  };
+
+  const texteBouton = bouton ? bouton.innerHTML : '';
+  if (bouton) { bouton.disabled = true; bouton.textContent = 'Envoi en cours…'; }
+  let reussi = false;
+  try {
+    const rep = await fetch(WEB3FORMS_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(donnees)
+    });
+    const res = await rep.json().catch(() => ({}));
+    reussi = rep.ok && res.success === true;
+  } catch (err) {
+    reussi = false;
+  }
+  if (bouton) { bouton.disabled = false; bouton.innerHTML = texteBouton; }
+
+  if (reussi) {
+    // « Message envoyé » seulement quand Web3Forms confirme l'envoi
+    form.reset();
+    const fc = document.getElementById('form-container'); if (fc) fc.style.display = 'none';
+    const fs = document.getElementById('form-success'); if (fs) { fs.classList.add('show'); fs.scrollIntoView({ block: 'center' }); }
+  } else if (erreur) {
+    // Le formulaire garde ce que la personne a écrit
+    erreur.hidden = false;
+    erreur.scrollIntoView({ block: 'center' });
+  }
 }
+
+/* Bouton « Copier l'adresse » du message d'erreur */
+(function () {
+  const b = document.getElementById('copier-adresse');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    const adresse = 'contact@becks-kitchen.fr';
+    const fini = function () { b.textContent = 'Adresse copiée'; setTimeout(function () { b.textContent = "Copier l'adresse"; }, 2500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(adresse).then(fini, function () { window.prompt("Copiez l'adresse :", adresse); });
+    } else {
+      window.prompt("Copiez l'adresse :", adresse);
+    }
+  });
+})();

@@ -419,7 +419,7 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preload" href="fonts/bowlby-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261122b">
+<link rel="stylesheet" href="style.css?v=20261127">
 </head>
 <body>
 
@@ -655,6 +655,8 @@
           <h3 class="form-title">Dites-nous en quelques mots…</h3>
           <p class="form-sub">Nous lirons votre message avant notre échange pour que nos 30 minutes soient vraiment utiles.</p>
           <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+            <!-- Anti-spam Web3Forms : case invisible, cochée seulement par les robots -->
+            <input type="checkbox" name="botcheck" class="anti-spam" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-grid">
               <div class="form-group"><label for="f-prenom">Prénom <span class="req">*</span></label><input id="f-prenom" type="text" name="prenom" placeholder="Marie" autocomplete="given-name" required></div>
               <div class="form-group"><label for="f-nom">Nom <span class="req">*</span></label><input id="f-nom" type="text" name="nom" placeholder="Dupont" autocomplete="family-name" required></div>
@@ -673,11 +675,15 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-plein form-submit">
+            <button type="submit" class="btn btn-rose form-submit" id="form-envoyer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               Envoyer ma demande
             </button>
           </form>
+          <div class="form-erreur" id="form-erreur" role="alert" hidden>
+            <p><strong>Votre message n'a pas pu partir.</strong> Réessayez dans un instant, ou écrivez-nous directement à cette adresse :</p>
+            <p class="form-erreur-adresse"><a href="mailto:contact@becks-kitchen.fr">contact@becks-kitchen.fr</a> <button type="button" class="btn btn-jaune btn-copier" id="copier-adresse">Copier l'adresse</button></p>
+          </div>
         </div>
         <div class="form-success" id="form-success" role="status">
           <img src="images/illustrations/feuille.png" width="400" height="400" alt="">
@@ -720,6 +726,7 @@
 
     <div class="boutons">
       <a href="mailto:contact@becks-kitchen.fr?subject=Devenir%20cuisinier%C2%B7e%20Beck's%20Kitchen" class="btn btn-jaune">Je veux en savoir plus</a>
+      <p class="mail-clair">ou par e-mail : <a href="mailto:contact@becks-kitchen.fr?subject=Devenir%20cuisinier%C2%B7e%20Beck's%20Kitchen">contact@becks-kitchen.fr</a></p>
     </div>
   </div>
 </section>
